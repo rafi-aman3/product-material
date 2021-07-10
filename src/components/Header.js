@@ -1,9 +1,10 @@
-import { AppBar, Button, IconButton, makeStyles, Toolbar, Typography, useTheme } from '@material-ui/core';
-import { Brightness4Outlined, ExitToAppOutlined, Facebook, HomeOutlined, NotificationImportantOutlined, ShoppingBasketOutlined, WbSunny } from '@material-ui/icons';
-import React, { useState } from 'react';
+import { AppBar, Button, IconButton, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import { Brightness4Outlined, HomeOutlined, NotificationImportantOutlined, ShoppingBasketOutlined, WbSunny } from '@material-ui/icons';
+import React  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import { changeMode, selectMode } from '../features/darkMode/darkModeSlice';
+import CurrencyDropdown from './CurrencyDropdown';
 
 const useStyles = makeStyles(theme => ({
     header: {
@@ -53,6 +54,8 @@ const Header = () => {
 
                     }
                 </IconButton>
+                <CurrencyDropdown/>
+                
                 
                 <Button>Rafi Aman</Button>
             </Toolbar>
