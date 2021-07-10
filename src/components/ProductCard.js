@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     },
 
     cardColor: {
-        color: "blue"
+        color: "black"
 
     }
 
@@ -59,12 +59,12 @@ const ProductCard = (props) => {
             </CardActionArea>
 
             <CardContent>
-                <Typography variant="body2" component="p">
-                    {product.description}
-                </Typography>
+               
+
+                <Typography variant="subtitle" component="p">${product.price}</Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small">Buy Now</Button>
             </CardActions>
         </Card>
         </Grid>
